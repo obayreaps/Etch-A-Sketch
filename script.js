@@ -1,8 +1,12 @@
-const gridContainer = document.querySelector(".grid-container");
-const resetBtn = document.querySelector("#reset");
+const gridContainer = document.getElementById("grid-container");
+const resetBtn = document.querySelector("#prompt");
 
 function createGrid(size)
 {
+    
+    gridContainer.style.width = `calc(100%/${size})`;
+    gridContainer.style.height = `calc(100%/${size})`;
+
     for(let i = 0; i < size * size; i++)
     {
         const grid = document.createElement("div");
@@ -15,18 +19,25 @@ function createGrid(size)
     }
 }
 
+function getSize()
+{
+    let userPrompt = prompt("Enter grid size: ");
+    return userPrompt;
+}
+
 function start() {
+
+    size = 16;
     createGrid(16);
-    
+
     resetBtn.addEventListener("click", () => {
-        resetGrid();
+        console.log("Prompt has been clicked. ");
+        let size = parseInt(getSize());
+        gridContainer.remove();
+        createGrid(size);
     });
-
 }
 
-function resetGrid(){
-    grid.classList.add("reset-board");
-}
 
 start();
 
