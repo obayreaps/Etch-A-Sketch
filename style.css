@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to bottom right, #f9957F,rgb(236, 179, 73),#F2F5D0)
+}
+
 /* Title */
 .main-title {
     font-size: 72px;
@@ -15,12 +19,14 @@
 #color-mode {
     text-align: center;
     margin: 10px;
+    font-size: 25px;
 }
 
 /* Main Body */
 .main-body{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 /* Menu Section */
@@ -29,6 +35,24 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(251, 182, 122);
+    box-shadow: 1px 1px grey;
+    padding: 10px;
+}
+
+.menu-buttons button{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.size button {
+    padding: 0px 30px;
+}
+.size input {
+    text-align: center;
 }
 
 /* Board */
@@ -37,4 +61,6 @@
     width: 500px;
     height: 500px;
     display: grid;
+    border-radius: 2px;
+    box-shadow: 2px 2px grey;
 }
