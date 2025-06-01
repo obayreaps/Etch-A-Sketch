@@ -2,52 +2,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: rgb(175, 175, 175);
 }
 
+/* Title */
 .main-title {
     font-size: 72px;
-    font-weight: 600;
+    font-weight: 550;
     text-align: center;
     margin-bottom: 50px;
 }
 
-
-/* Main body */
-.main-container{
-    margin: auto;
+/* Main Body */
+.main-body{
     display: flex;
+    justify-content: center;
+}
 
+/* Menu Section */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Board */
+.board {
     border: 1px solid black;
-    width: 1000px;
-    height: 1000px;
-}
-
-/* Menu panel */
-.menu-options {
-    border: 1px solid yellow;
-    width: 200px;
-    height: 700px;
-    margin: auto;
-}
-
-#reset-btn {
-    margin: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    background-color: cadetblue;
-}
-
-/* Grid Sketch pad */
-
-.sketch-grid{
-    border: 1px solid blue;
-    width: 800px;
-    height: 800px;
-    margin: auto;
-}
-
-.cell {
-    border: 1px solid black;
-    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    display: grid;
 }
