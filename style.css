@@ -12,6 +12,11 @@
     margin-bottom: 50px;
 }
 
+#color-mode {
+    text-align: center;
+    margin: 10px;
+}
+
 /* Main Body */
 .main-body{
     display: flex;
