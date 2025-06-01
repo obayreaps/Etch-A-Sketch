@@ -1,4 +1,5 @@
-//add initial color
+//add initial color 
+//it changes when user selects different color
 let color = "black";
 
 function createBoard(size)
@@ -8,10 +9,6 @@ function createBoard(size)
     //Reset board when changing sizes
     const squares = board.querySelectorAll("div");
     squares.forEach((div) => div.remove());
-
-    //Reset board button
-    const reset = document.querySelector("#reset");
-    reset.addEventListener("mousedown", clearBoard);
 
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows= `repeat(${size}, 1fr)`;
@@ -30,6 +27,8 @@ function createBoard(size)
 createBoard(16);
 
 
+
+
 //Other functions
 function clearBoard()
 {
@@ -46,12 +45,16 @@ function changeSize(input)
     }
 }
 
+//colors whenever mouse hovers over board square
 function colorSquare()
 {
-    this.style.backgroundColor = color;
+    if(color == "random")
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    else
+        this.style.backgroundColor = color;
 }
 
-
+//changes the global variable color
 function changeColor(choice)
 {
     color = choice;
