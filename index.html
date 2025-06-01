@@ -12,11 +12,11 @@
     <div id="color-mode">Color-Mode: False</div>
     <div class="main-body">
         <div class="menu-buttons">
-            <button onclick="resetBoard()">Reset</button>
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('white')">Erase</button>
-            <button onclick="changeColor('grey')">Grey</button>
-            <button onclick="changeColor('random')">Random</button>
+            <button class="resetBtn" onclick="resetBoard()">Reset</button>
+            <button class="blackBtn" onclick="changeColor('black')">Black</button>
+            <button class="eraserBtn" onclick="changeColor('white')">Erase</button>
+            <button class="greyBtn" onclick="changeColor('grey')">Grey</button>
+            <button class="randomBtn" onclick="changeColor('random')">Random</button>
 
             <!-- Change the size of the board -->
             <div class="size">
@@ -26,12 +26,12 @@
                     value="16"
                     onchange="changeSize(this.value)"
                 >
-                <button>Set Size</button>
+                <button class="sizeBtn">Set Size</button>
             </div>
         </div>
         
         <div class="board"></div>
-        
+
     </div>
 </body>
 </html>
