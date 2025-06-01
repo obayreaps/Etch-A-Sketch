@@ -9,16 +9,18 @@
 </head>
 <body>
     <div class="main-title">Etch-A-Sketch</div>
-    <div id="color-mode">Color-Mode: False</div>
+    <div class="main-description">Click to Color!</div>
+    <div id="color-mode">Coloring-Mode: Off</div>
     <div class="main-body">
         <div class="menu-buttons">
-            <button class="resetBtn" onclick="resetBoard()">Reset</button>
+            <div class="menu-description">Choose Coloring Option</div>
             <button class="blackBtn" onclick="changeColor('black')">Black</button>
             <button class="eraserBtn" onclick="changeColor('white')">Erase</button>
             <button class="greyBtn" onclick="changeColor('grey')">Grey</button>
             <button class="randomBtn" onclick="changeColor('random')">Random</button>
 
             <!-- Change the size of the board -->
+            <div class="menu-description">Change Board Size</div>
             <div class="size">
                 <input 
                     type="text" 
@@ -28,6 +30,8 @@
                 >
                 <button class="sizeBtn">Set Size</button>
             </div>
+
+            <button class="resetBtn" onclick="resetBoard()">Reset</button>
         </div>
         
         <div class="board"></div>

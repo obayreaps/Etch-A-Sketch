@@ -14,7 +14,14 @@ body {
     font-size: 72px;
     font-weight: 550;
     text-align: center;
-    margin: 50px;
+    margin: 10px 0px;
+}
+
+.main-description
+{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #color-mode {
@@ -44,6 +51,12 @@ body {
     padding: 10px;
 }
 
+.menu-description{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
 .menu-buttons button{
     font-size: 25px;
     border-radius: 5px;
@@ -65,7 +78,7 @@ body {
     blue, purple, #40E0D0, #FF8C00, #FF0080);
     background-size: 200%;
     background-position: left;
-    transition:500ms background-position ease-in-out;
+    transition:750ms background-position ease-in-out;
 }   
 
 .randomBtn:hover {
@@ -74,33 +87,36 @@ body {
 }
 
 .greyBtn:hover {
-    transition: 1s;
+    transition: 750ms;
     background-color: hsl(0, 0%, 50%);
 }
 
 .eraserBtn:hover {
-    transition: 1s;
+    transition: 550ms;
     color: hsla(0, 0%, 0%, 0);
 }
 
 .blackBtn:hover {
-    transition: 1s;
+    transition: 750ms;
     background-color: hsl(0, 0%, 0%, 100%);
     color: white;
 }
 
-.resetBtn:hover{
-    transition: 1s;
+.resetBtn {
+    margin-top: 30px;
     background-color: hsl(0, 94%, 51%);
-    color: white;
+    color:white;
 }
+
+
+/* Sizing Section */
 .sizeBtn{
     width: 150px;
-    height: 60px;
+    max-height: 40px;
     transition: transform .2s; /* Add a smooth transition */
 }
 .sizeBtn:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 

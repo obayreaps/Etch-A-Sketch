@@ -74,9 +74,9 @@ document.querySelector("body").addEventListener("click", (e)=> {
         let colorMode = document.querySelector("#color-mode");
         if(click)
         {
-            colorMode.textContent = "Color-Mode: True";
+            colorMode.textContent = "Coloring-Mode: On";
         }
         else
-            colorMode.textContent = "Color-Mode: False";
+            colorMode.textContent = "Coloring-Mode: Off";
     }
 });
