@@ -103,10 +103,10 @@ body {
     color: white;
 }
 
-.resetBtn {
+.menu-buttons .resetBtn{
     margin-top: 30px;
-    background-color: hsl(0, 94%, 51%);
-    color:white;
+    background-color: #d9534f;
+    color:rgb(0, 0, 0);
 }
 
 
